@@ -4,5 +4,6 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  return array.collect {|x| x if x.include?("a")}
+  cntns=[]
+  array.collect {|x| cntns << x if x.include?("a")}
 end
