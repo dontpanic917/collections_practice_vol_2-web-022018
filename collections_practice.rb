@@ -15,6 +15,6 @@ end
 
 def remove_non_strings(array)
   cntns=[]
-  array.collect {|x| cntns << x if x.respond_to?(:to_s) }
+  array.collect {|x| cntns << x if x.respond_to?(:to_s)}
   return cntns
 end
