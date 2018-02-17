@@ -12,3 +12,9 @@ end
 def first_wa(array)
   array.index {|x| return x if x[0] == "w" && x[1] == "a"}
 end
+
+def remove_non_strings(array)
+  cntns=[]
+  array.collect {|x| cntns << x if x.respond_to?(:to_s) }
+  return cntns
+end
