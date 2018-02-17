@@ -23,4 +23,5 @@ def count_elements(array)
   words=[]
   freqs=[]
   array.collect {|x| words.include(x) ? freqs[words.index(x)] += 1 : words << x}
+  return
 end
