@@ -6,4 +6,5 @@ end
 def contain_a(array)
   cntns=[]
   array.collect {|x| cntns << x if x.include?("a")}
+  return cntns
 end
