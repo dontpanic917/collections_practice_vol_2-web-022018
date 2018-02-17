@@ -8,3 +8,9 @@ def contain_a(array)
   array.collect {|x| cntns << x if x.include?("a")}
   return cntns
 end
+
+def first_wa(array)
+  cntns=[]
+  array.collect {|x| cntns << x if x[0] == "w" && x[1]}
+  return cntns
+end
