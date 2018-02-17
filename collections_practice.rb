@@ -11,6 +11,6 @@ end
 
 def first_wa(array)
   cntns=[]
-  array.collect {|x| cntns << x if x[0] == "w" && x[1]}
+  array.collect {|x| cntns << x if x[0] == "w" && x[1] == "a"}
   return cntns
 end
