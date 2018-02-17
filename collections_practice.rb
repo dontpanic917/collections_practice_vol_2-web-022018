@@ -10,7 +10,5 @@ def contain_a(array)
 end
 
 def first_wa(array)
-  cntns=[]
-  array.collect {|x| cntns << x if x[0] == "w" && x[1] == "a"}
-  return cntns
+  array.index {|x| return x if x[0] == "w" && x[1] == "a"}
 end
