@@ -4,5 +4,5 @@ def begins_with_r(array)
 end
 
 def contain_a(array)
-  return array.collect {|x| x.include?("a") ? x : return}
+  return array.collect {|x| if x.include?("a") {x}}
 end
