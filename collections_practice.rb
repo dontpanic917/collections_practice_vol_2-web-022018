@@ -18,3 +18,7 @@ def remove_non_strings(array)
   array.collect {|x| cntns << x if x.is_a?(String)}
   return cntns
 end
+
+def count_elements(array)
+  array.size
+end
