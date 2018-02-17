@@ -20,5 +20,7 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.size
+  words=[]
+  freqs=[]
+  array.collect {|x| words.include(x) ? freqs[words.index(x)] += 1 : words << x}
 end
